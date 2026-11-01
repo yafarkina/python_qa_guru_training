@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
 
-@pytest.mark.usefixtures("setup")
+
 class TestLoginForm:
     URL = "https://qa-guru.github.io/one-page-form/login.html"
     LOGIN_FIELD = (By.ID, "login-input")
