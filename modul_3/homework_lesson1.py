@@ -92,10 +92,10 @@ def test_neg_check_field():
             submit_button_click(wd)
             time.sleep(5)  # Пауза, чтобы увидеть результат отправки
             result_box = wd.find_element(By.ID, "output")
-           # assert item['full_name'] in result_box.text
-           # assert item['email'] in result_box.text
-          #  assert item['current_address'] in result_box.text
-           # assert item['permanent_address'] in result_box.text
+            assert item['full_name'] in result_box.text
+            assert item['email'] in result_box.text
+            assert item['current_address'] in result_box.text
+            assert item['permanent_address'] in result_box.text
             print(result_box)
             print(f"Негативный тест")
 
